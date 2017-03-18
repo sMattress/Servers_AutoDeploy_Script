@@ -1,14 +1,17 @@
 require 'sinatra'
-require 'json'
+
+PROJECT_DIR = '/usr/local/sMattress'
+WEBSERVER_DIR = PROJECT_DIR + '/WebServer'
+TCPSERVER_DIR = PROJECT_DIR + '/TcpServer'
 
 post '/web_server' do
 
-  system 'sh /usr/local/intelligent-mattress/web-server/auto-deploy.sh'
+  system 'sh ' + WEBSERVER_DIR + '/AutoDeploy_WebServer.sh'
 
 end
 
-post '/netty_server' do
+post '/tcp_server' do
 
-  system 'sh /usr/local/intelligent-mattress/netty-server/auto-deploy.sh'
+  system 'sh ' + TCPSERVER_DIR + '/AutoDeploy_TcpServer.sh'
 
 end
