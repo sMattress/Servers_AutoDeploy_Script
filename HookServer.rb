@@ -6,12 +6,12 @@ TCPSERVER_DIR = PROJECT_DIR + '/TcpServer'
 
 post '/web_server' do
 
-  system 'sh ' + WEBSERVER_DIR + '/AutoDeploy_WebServer.sh'
+  system 'sh ' + WEBSERVER_DIR + '/AutoDeploy.sh'
 
 end
 
 post '/tcp_server' do
 
-  system 'sh ' + TCPSERVER_DIR + '/AutoDeploy_TcpServer.sh'
+  system 'sh ' + TCPSERVER_DIR + '/AutoDeploy.sh'
 
 end
