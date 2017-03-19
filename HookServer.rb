@@ -10,7 +10,7 @@ post '/web_server' do
 
 end
 
-post '/netty_server' do
+post '/tcp_server' do
 
   system 'sh ' + TCPSERVER_DIR + '/AutoDeploy_TcpServer.sh'
 
